@@ -41,6 +41,7 @@ namespace Deneme
             this.activityLabel = new System.Windows.Forms.Label();
             this.hideRainButton = new System.Windows.Forms.Button();
             this.quitButton = new System.Windows.Forms.Button();
+            this.informationButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mainPicturBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -162,6 +163,7 @@ namespace Deneme
             this.hideRainButton.TabIndex = 15;
             this.hideRainButton.TabStop = false;
             this.hideRainButton.UseVisualStyleBackColor = false;
+            this.hideRainButton.Click += new System.EventHandler(this.hideRainButton_Click);
             // 
             // quitButton
             // 
@@ -182,12 +184,32 @@ namespace Deneme
             this.quitButton.UseVisualStyleBackColor = false;
             this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
             // 
+            // informationButton
+            // 
+            this.informationButton.BackColor = System.Drawing.Color.Transparent;
+            this.informationButton.BackgroundImage = global::Deneme.Properties.Resources.questionMark3;
+            this.informationButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.informationButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.informationButton.FlatAppearance.BorderSize = 0;
+            this.informationButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.informationButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.informationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.informationButton.ForeColor = System.Drawing.Color.Transparent;
+            this.informationButton.Location = new System.Drawing.Point(1844, 121);
+            this.informationButton.Name = "informationButton";
+            this.informationButton.Size = new System.Drawing.Size(61, 77);
+            this.informationButton.TabIndex = 17;
+            this.informationButton.TabStop = false;
+            this.informationButton.UseVisualStyleBackColor = false;
+            this.informationButton.Click += new System.EventHandler(this.informationButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Deneme.Properties.Resources.mainFrame;
             this.ClientSize = new System.Drawing.Size(1924, 1061);
+            this.Controls.Add(this.informationButton);
             this.Controls.Add(this.quitButton);
             this.Controls.Add(this.hideRainButton);
             this.Controls.Add(this.activityLabel);
@@ -220,6 +242,7 @@ namespace Deneme
         public System.Windows.Forms.Label activityLabel;
         public System.Windows.Forms.Button hideRainButton;
         private System.Windows.Forms.Button quitButton;
+        private System.Windows.Forms.Button informationButton;
     }
 }
 

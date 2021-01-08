@@ -103,6 +103,16 @@ namespace Deneme.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap informationFrame {
+            get {
+                object obj = ResourceManager.GetObject("informationFrame", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap mainFrame {
             get {
                 object obj = ResourceManager.GetObject("mainFrame", resourceCulture);
@@ -126,6 +136,16 @@ namespace Deneme.Properties {
         internal static System.Drawing.Bitmap PlayerUI {
             get {
                 object obj = ResourceManager.GetObject("PlayerUI", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap questionMark3 {
+            get {
+                object obj = ResourceManager.GetObject("questionMark3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -121,5 +121,10 @@ namespace Deneme
         {
             this.Visible = false;
         }
+
+        private void ToDoForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

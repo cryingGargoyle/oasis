@@ -233,6 +233,7 @@ namespace Deneme
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ToDoForm";
             this.Text = "ToDoForm";
+            this.Load += new System.EventHandler(this.ToDoForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

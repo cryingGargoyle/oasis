@@ -17,7 +17,7 @@ namespace Deneme
         private int userSeconds = 0;
         MusicSelectForm musicForm;
         ToDoForm toForm;
-        
+        informationForm inform;
         public int UserMinutes
         {
             get { return userMinutes; }
@@ -36,6 +36,7 @@ namespace Deneme
             WindowState = FormWindowState.Maximized;
             musicForm = new MusicSelectForm(this);
             toForm = new ToDoForm();
+            inform = new informationForm();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -93,6 +94,18 @@ namespace Deneme
         }
 
         private void mainPicturBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void informationButton_Click(object sender, EventArgs e)
+        {
+
+            inform.Visible = true;
+            
+        }
+
+        private void hideRainButton_Click(object sender, EventArgs e)
         {
 
         }
