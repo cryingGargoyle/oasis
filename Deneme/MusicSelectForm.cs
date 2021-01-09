@@ -59,7 +59,7 @@ namespace Deneme
         private Form1 mainForm = null;
         public MusicSelectForm(Form callingForm)
         {
-            soundLocs = new String[5] { "Lost Dreams.wav", "Resonance.wav", "Self-Discovery.wav", "Wii Music.wav", "Windows96.wav" };
+            soundLocs = new String[5] { "Lost Dreams.mp3", "Resonance.mp3", "Self-Discovery.mp3", "Wii Music.mp3", "Windows96.mp3" };
             soundIndex = 0;
             durations = new int[5] { 158400, 202200, 135600, 78600, 312600 };
             musicName = new String[5] { "Lost Dreams", "Resonance", "Self-Discovery", "Wii Music", "Caligula" };
@@ -77,10 +77,10 @@ namespace Deneme
         {
             //musicTrackBar.Enabled = true;
             //sPlayer.controls.stop();
-            //sPlayer.URL = "Lost Dreams.wav";
+            
             this.mainForm.playingMusicLabel.Text = "Lost Dreams";
             this.mainForm.playingGroupLabel.Text = "Infinity Frequencies";
-            //sPlayer.controls.play();
+            
             soundIndex = 0;
             handleNextSound(0);
         }
