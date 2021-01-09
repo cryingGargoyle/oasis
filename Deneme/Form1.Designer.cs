@@ -39,9 +39,9 @@ namespace Deneme
             this.playingGroupLabel = new System.Windows.Forms.Label();
             this.notebookFormOpenButtonL = new System.Windows.Forms.Label();
             this.activityLabel = new System.Windows.Forms.Label();
+            this.informationButton = new System.Windows.Forms.Button();
             this.hideRainButton = new System.Windows.Forms.Button();
             this.quitButton = new System.Windows.Forms.Button();
-            this.informationButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mainPicturBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,16 +148,36 @@ namespace Deneme
             this.activityLabel.TabIndex = 7;
             this.activityLabel.Text = "(Activity)";
             // 
+            // informationButton
+            // 
+            this.informationButton.BackColor = System.Drawing.Color.Transparent;
+            this.informationButton.BackgroundImage = global::Deneme.Properties.Resources.questionMark3;
+            this.informationButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.informationButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.informationButton.FlatAppearance.BorderSize = 0;
+            this.informationButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.informationButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.informationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.informationButton.ForeColor = System.Drawing.Color.Transparent;
+            this.informationButton.Location = new System.Drawing.Point(1844, 121);
+            this.informationButton.Name = "informationButton";
+            this.informationButton.Size = new System.Drawing.Size(61, 77);
+            this.informationButton.TabIndex = 17;
+            this.informationButton.TabStop = false;
+            this.informationButton.UseVisualStyleBackColor = false;
+            this.informationButton.Click += new System.EventHandler(this.informationButton_Click);
+            // 
             // hideRainButton
             // 
             this.hideRainButton.BackColor = System.Drawing.Color.Transparent;
+            this.hideRainButton.BackgroundImage = global::Deneme.Properties.Resources.windowButton;
             this.hideRainButton.Cursor = System.Windows.Forms.Cursors.Default;
             this.hideRainButton.FlatAppearance.BorderSize = 0;
             this.hideRainButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.hideRainButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.hideRainButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hideRainButton.ForeColor = System.Drawing.Color.Transparent;
-            this.hideRainButton.Location = new System.Drawing.Point(207, 0);
+            this.hideRainButton.Location = new System.Drawing.Point(208, -1);
             this.hideRainButton.Name = "hideRainButton";
             this.hideRainButton.Size = new System.Drawing.Size(925, 682);
             this.hideRainButton.TabIndex = 15;
@@ -184,25 +204,6 @@ namespace Deneme
             this.quitButton.UseVisualStyleBackColor = false;
             this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
             // 
-            // informationButton
-            // 
-            this.informationButton.BackColor = System.Drawing.Color.Transparent;
-            this.informationButton.BackgroundImage = global::Deneme.Properties.Resources.questionMark3;
-            this.informationButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.informationButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.informationButton.FlatAppearance.BorderSize = 0;
-            this.informationButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.informationButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.informationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.informationButton.ForeColor = System.Drawing.Color.Transparent;
-            this.informationButton.Location = new System.Drawing.Point(1844, 121);
-            this.informationButton.Name = "informationButton";
-            this.informationButton.Size = new System.Drawing.Size(61, 77);
-            this.informationButton.TabIndex = 17;
-            this.informationButton.TabStop = false;
-            this.informationButton.UseVisualStyleBackColor = false;
-            this.informationButton.Click += new System.EventHandler(this.informationButton_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -220,6 +221,7 @@ namespace Deneme
             this.Controls.Add(this.countdownLabel);
             this.Controls.Add(this.timerFormOpenButton);
             this.Controls.Add(this.mainPicturBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -230,8 +232,6 @@ namespace Deneme
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox mainPicturBox;
         private System.Windows.Forms.Button timerFormOpenButton;
         public System.Windows.Forms.Timer timer1;
         public System.Windows.Forms.Label countdownLabel;
@@ -240,9 +240,10 @@ namespace Deneme
         public System.Windows.Forms.Label playingGroupLabel;
         public System.Windows.Forms.Label notebookFormOpenButtonL;
         public System.Windows.Forms.Label activityLabel;
-        public System.Windows.Forms.Button hideRainButton;
-        private System.Windows.Forms.Button quitButton;
         private System.Windows.Forms.Button informationButton;
+        public System.Windows.Forms.Button hideRainButton;
+        private System.Windows.Forms.PictureBox mainPicturBox;
+        private System.Windows.Forms.Button quitButton;
     }
 }
 

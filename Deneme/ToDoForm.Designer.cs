@@ -48,52 +48,52 @@ namespace Deneme
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(191)))), ((int)(((byte)(230)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F);
             this.textBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox1.Location = new System.Drawing.Point(237, 214);
+            this.textBox1.Location = new System.Drawing.Point(237, 213);
             this.textBox1.Name = "textBox1";
             this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox1.Size = new System.Drawing.Size(343, 23);
+            this.textBox1.Size = new System.Drawing.Size(343, 29);
             this.textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(191)))), ((int)(((byte)(230)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.textBox2.Location = new System.Drawing.Point(237, 282);
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F);
+            this.textBox2.Location = new System.Drawing.Point(238, 282);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(343, 23);
+            this.textBox2.Size = new System.Drawing.Size(343, 29);
             this.textBox2.TabIndex = 6;
             // 
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(191)))), ((int)(((byte)(230)))));
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F);
             this.textBox3.Location = new System.Drawing.Point(237, 350);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(343, 23);
+            this.textBox3.Size = new System.Drawing.Size(343, 29);
             this.textBox3.TabIndex = 7;
             // 
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(191)))), ((int)(((byte)(230)))));
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F);
             this.textBox4.Location = new System.Drawing.Point(237, 418);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(343, 23);
+            this.textBox4.Size = new System.Drawing.Size(343, 29);
             this.textBox4.TabIndex = 8;
             // 
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(191)))), ((int)(((byte)(230)))));
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F);
             this.textBox5.Location = new System.Drawing.Point(237, 487);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(343, 23);
+            this.textBox5.Size = new System.Drawing.Size(343, 29);
             this.textBox5.TabIndex = 9;
             // 
             // saveButtonL

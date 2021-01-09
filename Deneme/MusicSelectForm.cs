@@ -38,7 +38,18 @@ namespace Deneme
             sPlayer.controls.stop();
             sPlayer.URL = soundLocs[soundIndexFunc];
             sPlayer.controls.play();
-            sPlayer.settings.volume = musicTrackBar.Value * 5;
+
+            if (muteSound)
+            {
+                musicTrackBar.Enabled = false;
+                sPlayer.settings.volume = 0;
+            } 
+            else
+            {
+                musicTrackBar.Enabled = true;
+                sPlayer.settings.volume = musicTrackBar.Value * 5;
+            }
+            
             this.mainForm.playingMusicLabel.Text = musicName[soundIndexFunc];
             this.mainForm.playingGroupLabel.Text = musicGroup[soundIndexFunc];
             soundIndex++;
@@ -64,7 +75,7 @@ namespace Deneme
 
         private void music1ButtonL_Click(object sender, EventArgs e)
         {
-            musicTrackBar.Enabled = true;
+            //musicTrackBar.Enabled = true;
             //sPlayer.controls.stop();
             //sPlayer.URL = "Lost Dreams.wav";
             this.mainForm.playingMusicLabel.Text = "Lost Dreams";
@@ -76,7 +87,7 @@ namespace Deneme
 
         private void music2ButtonL_Click(object sender, EventArgs e)
         {
-            musicTrackBar.Enabled = true;
+            //musicTrackBar.Enabled = true;
             //sPlayer.controls.stop();
             //sPlayer.URL = "Resonance.wav";
             this.mainForm.playingMusicLabel.Text = "Resonance";
@@ -88,7 +99,7 @@ namespace Deneme
 
         private void music3ButtonL_Click(object sender, EventArgs e)
         {
-            musicTrackBar.Enabled = true;
+            //musicTrackBar.Enabled = true;
             //sPlayer.controls.stop();
             //sPlayer.URL = "Self-Discovery.wav";
             this.mainForm.playingMusicLabel.Text = "Self-Discovery";
@@ -100,7 +111,7 @@ namespace Deneme
 
         private void music4ButtonL_Click(object sender, EventArgs e)
         {
-            musicTrackBar.Enabled = true;
+            //musicTrackBar.Enabled = true;
             //sPlayer.controls.stop();
             //sPlayer.URL = "Wii Music.wav";
             this.mainForm.playingMusicLabel.Text = "Wii Music";
@@ -112,7 +123,7 @@ namespace Deneme
 
         private void music5ButtonL_Click(object sender, EventArgs e)
         {
-            musicTrackBar.Enabled = true;
+            //musicTrackBar.Enabled = true;
             //sPlayer.controls.stop();
             //sPlayer.URL = "Windows96.wav";
             this.mainForm.playingMusicLabel.Text = "Caligula";

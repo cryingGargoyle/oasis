@@ -32,11 +32,10 @@ namespace Deneme
         public Form1()
         {
             InitializeComponent();
-            FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
             musicForm = new MusicSelectForm(this);
             toForm = new ToDoForm();
-            inform = new informationForm();
+            inform = new informationForm(this);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -100,14 +99,25 @@ namespace Deneme
 
         private void informationButton_Click(object sender, EventArgs e)
         {
-
+            //groupBox1.Visible = true;
+            //closePanelButton.Enabled = true;
             inform.Visible = true;
-            
+
         }
 
         private void hideRainButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void closePanelButton_Click_1(object sender, EventArgs e)
+        {
+            //this.Focus();
+            //groupBox1.Visible = false;
+            //this.Focus();
+            //closePanelButton.Enabled = false;
+            //this.Focus();
         }
     }
     

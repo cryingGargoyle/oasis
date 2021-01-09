@@ -17,19 +17,23 @@ namespace Deneme
             InitializeComponent();
         }
 
+        private Form1 mainForm = null;
+        public informationForm(Form callingForm)
+        {
+            WindowState = FormWindowState.Maximized;
+            mainForm = callingForm as Form1;
+            InitializeComponent();
+        }
+
 
         private void informationForm_Load(object sender, EventArgs e)
         {
             this.Focus();
-            FormBorderStyle = FormBorderStyle.None;
-            WindowState = FormWindowState.Maximized;
 
         }
-
-        private void closeFormButtonL_Click(object sender, EventArgs e)
+        private void quitButton_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-
         }
     }
 }
